@@ -14,7 +14,7 @@ public class MenuDTO {
 		this.menu_seq = menu_seq;
 	}
 	
-	//Getter/Setter
+	//Getter/Setter  menu_id -> get Menu_id ()
 	public String getMenu_id() {
 		return menu_id;
 	}
