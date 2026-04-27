@@ -1,11 +1,14 @@
 package com.green.menus.dto;
 
+import lombok.Data;
+
 public class MenuDTO {
 	// Field
 	private String  menu_id;
 	private String  menu_name;
 	private int     menu_seq;
 	
+
 	// Constructor
 	public MenuDTO() {}
 	public MenuDTO(String menu_id, String menu_name, int menu_seq) {
@@ -39,4 +42,5 @@ public class MenuDTO {
 	public String toString() {
 		return "MenuDTO [menu_id=" + menu_id + ", menu_name=" + menu_name + ", menu_seq=" + menu_seq + "]";
 	}	
+
 }

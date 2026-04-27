@@ -26,6 +26,13 @@ namespace="com.green.menus.mapper.MenuMapper" : interface 위치
 	 VALUES ( #{ menu_id }, #{ menu_name }, #{ menu_seq } )	
 	
 	</insert>
+	
+	<delete  id="deleteMenu">
+	
+	DELETE FROM MENUS
+     WHERE MENU_ID = #{ menu_id }
+	
+	</delete>
   
 </mapper>
 
