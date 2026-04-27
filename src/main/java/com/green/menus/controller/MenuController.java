@@ -96,8 +96,19 @@ public class MenuController {
 		// 수정할 자료를 db 에서 검색 : 수정할 정보가 담긴 조회된 menu
 		MenuDTO  menu   =   menuMapper.getMenu( menuDTO );
 		model.addAttribute("menu", menu);		
+		System.out.println("조회한 menuDTO : " + menu );
 		
 		return "menus/update";		
+	}
+	
+	// /Menus/Update
+	@RequestMapping("/Menus/Update")
+	public  String  update( MenuDTO  menuDTO ) {
+		
+		// 넘어온 정보로 db 를 수정한다
+		menuMapper.updateMenu( menuDTO );
+		
+		return  "redirect:/Menus/List";
 	}
 	
 	
